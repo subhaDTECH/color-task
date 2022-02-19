@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.color-generator{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    background-color: gray;
+    display: grid;
+    place-items: center;
+}
+.main__box{
+    width: 70vw;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.changecolor{
+    background-color: rgba(0, 0, 0, 0.891) !important;
+}
+.color{
+    width: 300px;
+    height: 80px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    /* box-shadow: 2px 4px -4px 2px rgba(0, 0, 0, 0.34); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+  
+    
+}
+.color svg{
+    width: 20px;
+    height: 20px;
+    color: red;
+    z-index: 100;
+   
+}
+#btn{
+    background-color:darkorange;
+    padding: 20px  30px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+#btn2{
+    background-color:darkorange;
+    padding: 20px  30px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+.heading{
+    background-color: aliceblue;
+    width: 50%;
+    margin:0px auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.savecolor__section{
+    margin: 20px;
+    font-size: 20px;
+    
+}
+.savecolor__section >h3{
+    color: darkorange;
+}
+.myclass{
+    color: darkorange;
+}
+
+@media (max-width:700px){
+    .main__box{
+    width: 70vw;
+    height: auto;
+   
+}
+
+.color{
+    width: 200px;
+    height: 70px;
+}
+.color-generator{
+    width: 100vw;
+    height: auto;
+   
+}
+}
