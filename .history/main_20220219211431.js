@@ -44,7 +44,7 @@ function save(Upcomingcolor){
     alert("save to localStorage in fav section")
      if(!localStorage.getItem('saveColor')){
        
-         localStorage.setItem('saveColor',JSON.stringify([]))
+         localStorage.setItem('saveColor',JSON.stringify(arr))
          console.log("empty")
     }else{
         let allsaveColors=JSON.parse(localStorage.getItem('saveColor'));
@@ -67,7 +67,7 @@ function addColor(){
   let allsaveColors=  JSON.parse(localStorage.getItem('saveColor'))  ;
   console.log(allsaveColors)
   let str="";
-  for(let i=0;i<allsaveColors?.length;i++){
+  for(let i=0;i<allsaveColors.length;i++){
      str=str+allsaveColors[i];
   
    console.log("working")

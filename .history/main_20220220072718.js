@@ -44,7 +44,7 @@ function save(Upcomingcolor){
     alert("save to localStorage in fav section")
      if(!localStorage.getItem('saveColor')){
        
-         localStorage.setItem('saveColor',JSON.stringify([]))
+         localStorage.setItem('saveColor',JSON.stringify(arr))
          console.log("empty")
     }else{
         let allsaveColors=JSON.parse(localStorage.getItem('saveColor'));
